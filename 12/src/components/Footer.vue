@@ -14,5 +14,12 @@
 .footer{
     text-align: center;
     color: #666;
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    background: #999;
 }
 </style>

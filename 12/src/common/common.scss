@@ -1,0 +1,71 @@
+.wraper {
+    width: 1230px;
+    margin: 60px auto;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        width: 235px;
+        height: 300px;
+        text-align: center;
+        border: 1px solid #eee;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .title {
+        width: 150px;
+        margin: 0 auto;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .comment {
+        background-color: #ff6700;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .comment p:nth-child(1),
+      .comment p:nth-child(2) {
+        width: 150px;
+        font-size: 12px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin: 0 auto;
+        line-height: 24px;
+      }
+      .comment p:nth-child(1) {
+        color: #fff;
+      }
+      .comment p:nth-child(2) {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    .my_transition {
+      transition: all 0.4s;
+    }
+    .my_transition-enter-active {
+      transition: all 0.4s ease;
+    }
+    .my_transition-leave-active {
+      transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+    }
+    .my_transition-enter,
+    .my_transition-leave-to {
+      transform: translateY(10px);
+    }
+    .boxshow {
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      transform: scale(1.01);
+    }
+    /deep/ .icon-gouwuche{
+        color: #fff;
+        font-size: 18px;
+    }
+  }

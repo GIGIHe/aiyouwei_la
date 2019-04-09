@@ -1,7 +1,8 @@
 <template>
     <div>
        <Header></Header>
-       <Nav></Nav>
+       <Content></Content>
+       <test></test>
        <Footer></Footer>
     </div>
 </template>
@@ -9,12 +10,14 @@
 <script>
 import Header from "@/components/Header.vue"
 import Footer from "@/components/Footer.vue"
-import Nav from "@/components/Nav.vue"
+import Content from "@/components/Content.vue"
+import test from "@/components/test.vue"
     export default {
         components:{
             Header,
             Footer,
-            Nav
+            Content,
+            test
         }
     }
 </script>
