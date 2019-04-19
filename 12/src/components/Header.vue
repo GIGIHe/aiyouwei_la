@@ -10,7 +10,7 @@
         <h2 v-show="isLogin" class="hover">hekukk</h2>
         <h2 v-show="isLogin" class="hover">退出</h2>
         <el-badge :value="num" class="item">
-          <i class="iconfont icon-gouwuche"></i>
+          <i class="iconfont icon-gouwuche" @click="hanldeClick"></i>
         </el-badge>
       </div>
     </div>
@@ -24,6 +24,19 @@ export default {
             isLogin:false,
             num:1
         }
+    },
+    methods:{
+      handleClick(){
+        if(this.$store.userInfo){
+     this.$router.push('/CarList')
+        }else{
+          this.$message({
+            type:"warning",
+            message:"请登录！"
+          })
+        }
+      
+      }
     }
 };
 </script>
@@ -40,6 +53,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 .inner {
   width: 80%;

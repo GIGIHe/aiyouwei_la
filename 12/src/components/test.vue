@@ -30,7 +30,6 @@ export default {
   data() {
     return {
       showUpdate: -1,
-      isShow: false,
       listData: [
         {
           img: "https://i1.mifile.cn/a1/pms_1546491118.91317371!220x220.jpg",
@@ -79,7 +78,6 @@ export default {
     hover: function(index) {
       //   console.log(index)
       this.showUpdate = index;
-      this.isShow = !this.isShow;
     }
   }
 };
